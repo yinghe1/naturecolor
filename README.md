@@ -34,6 +34,7 @@ A color design app that extracts colors from nature images. Pick colors directly
 # Install dependencies
 npm run install:all
 
+mv .env.sample .env 
 # Add your OpenAI API key
 # Edit .env and set OPENAI_API_KEY=sk-...
 
