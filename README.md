@@ -1,6 +1,6 @@
 # NatureColor
 
-A color design app that extracts colors from nature images. Pick colors directly from uploaded photos, name them, and build a reusable design system. Use the Playground to generate visual artifacts with your palette via LLM.
+A color design app that extracts colors from nature images. Pick colors directly from uploaded photos, name them as their real name eg. snowwhite, sunsetred, sunnyblue, and build a reusable design system. Use the Playground to generate visual artifacts with your palette via LLM.
 
 ![Design Page](DesignPage.png)
 
