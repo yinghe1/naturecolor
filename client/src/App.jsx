@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Design from './pages/Design'
 import Playground from './pages/Playground'
+import Artifacts from './pages/Artifacts'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Design />} />
           <Route path="/playground" element={<Playground />} />
+          <Route path="/artifacts" element={<Artifacts />} />
         </Routes>
       </main>
     </div>

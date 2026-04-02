@@ -530,6 +530,133 @@ body {
   background: var(--accent-hover);
 }
 
+/* Artifacts page */
+.artifacts-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.artifacts-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.artifacts-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.artifacts-count {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}
+
+.artifacts-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-tertiary);
+  font-size: 0.9rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+}
+
+.artifacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.artifact-tile {
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.artifact-tile:hover {
+  border-color: var(--border);
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.artifact-tile.active {
+  border-color: var(--accent);
+}
+
+.artifact-tile-preview {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.artifact-tile-preview iframe {
+  width: 500px;
+  height: 500px;
+  border: none;
+  transform: scale(0.4);
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+.artifact-tile-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  gap: 0.5rem;
+}
+
+.artifact-tile-name {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.artifact-detail {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.artifact-detail-preview {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.artifact-detail-preview iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+.artifact-detail-meta h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.artifact-detail-instruction {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0.25rem 0 0;
+}
+
 /* Toast notification */
 .toast {
   position: fixed;

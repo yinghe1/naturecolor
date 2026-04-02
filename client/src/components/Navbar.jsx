@@ -11,6 +11,9 @@ export default function Navbar({ theme, toggleTheme }) {
         <NavLink to="/playground" className={({ isActive }) => isActive ? 'active' : ''}>
           Playground
         </NavLink>
+        <NavLink to="/artifacts" className={({ isActive }) => isActive ? 'active' : ''}>
+          Artifacts
+        </NavLink>
         <button className="theme-toggle" onClick={toggleTheme} title="Toggle theme">
           {theme === 'light' ? '\u263E' : '\u2600'}
         </button>

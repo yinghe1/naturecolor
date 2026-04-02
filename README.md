@@ -10,6 +10,8 @@ A color design app that extracts colors from nature images. Pick colors directly
 
 **Playground Page** — Browse your saved color palette and use natural language instructions to generate SVG logos, typography, and other visual artifacts powered by OpenAI.
 
+**Artifacts Page** — Browse all saved artifacts in a grid view. Click to expand a full preview with embeddable URL and `<iframe>` snippet. Delete artifacts you no longer need.
+
 **Save Artifacts** — Save generated artifacts from the Playground and get an embeddable URL or `<iframe>` snippet to use in any webpage:
 ```html
 <iframe src="http://localhost:3002/api/artifacts/:id/embed" width="600" height="400" frameborder="0"></iframe>
@@ -63,7 +65,8 @@ naturecolor/
 │       ├── App.jsx               # Router + theme provider
 │       ├── pages/
 │       │   ├── Design.jsx        # Color picking page
-│       │   └── Playground.jsx    # LLM generation page
+│       │   ├── Playground.jsx    # LLM generation page
+│       │   └── Artifacts.jsx     # Saved artifacts gallery
 │       └── components/
 │           ├── Navbar.jsx        # Navigation + theme toggle
 │           ├── ImageCanvas.jsx   # Canvas with crosshair picker
