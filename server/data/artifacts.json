@@ -1,0 +1,9 @@
+[
+  {
+    "id": "16f30c3f-7e74-4da7-966b-981108ce0b7c",
+    "name": "tomorrow",
+    "html": "```svg\n<svg width=\"300\" height=\"300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"100%\" height=\"100%\" fill=\"#ffffff\" />\n  \n  <circle cx=\"150\" cy=\"150\" r=\"80\" fill=\"#ccc8b5\" />\n  <ellipse cx=\"130\" cy=\"130\" rx=\"20\" ry=\"30\" fill=\"#ffffff\" />\n  <ellipse cx=\"170\" cy=\"130\" rx=\"20\" ry=\"30\" fill=\"#ffffff\" />\n  <circle cx=\"140\" cy=\"140\" r=\"5\" fill=\"#620013\" />\n  <circle cx=\"160\" cy=\"140\" r=\"5\" fill=\"#620013\" />\n  <ellipse cx=\"150\" cy=\"160\" rx=\"15\" ry=\"10\" fill=\"#ec4a53\" />\n  \n  <path d=\"M90,150 C90,120 120,100 150,100 C180,100 210,120 210,150\" fill=\"none\" stroke=\"#620013\" stroke-width=\"3\" />\n  \n  <ellipse cx=\"120\" cy=\"190\" rx=\"15\" ry=\"8\" fill=\"#4598aa\" />\n  <ellipse cx=\"180\" cy=\"190\" rx=\"15\" ry=\"8\" fill=\"#4598aa\" />\n  \n  <text x=\"150\" y=\"270\" font-family=\"Arial, sans-serif\" font-size=\"30\" fill=\"#4f96da\" text-anchor=\"middle\">\n    tomorrow\n  </text>\n</svg>\n```",
+    "instruction": "create a svg logo with a chubby rabbit resembling Hayao Miyazaki's style using the nature color with professional typography saying tomorrow",
+    "createdAt": "2026-04-02T01:34:03.129Z"
+  }
+]
