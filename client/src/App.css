@@ -364,6 +364,17 @@ body {
   opacity: 1;
 }
 
+.color-swatch--highlighted .color-swatch-circle {
+  transform: scale(1.25);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent), 0 2px 8px var(--shadow-md);
+}
+
+.color-swatch--highlighted .color-swatch-name {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 /* Playground page */
 .playground-page {
   display: flex;
@@ -372,15 +383,10 @@ body {
 }
 
 .palette-bar {
-  display: flex;
-  gap: 1rem;
   padding: 1rem 1.5rem;
   background: var(--bg-secondary);
   border-radius: 12px;
   border: 1px solid var(--border-light);
-  overflow-x: auto;
-  min-height: 80px;
-  align-items: center;
 }
 
 .palette-empty {
@@ -655,6 +661,67 @@ body {
   font-size: 0.8rem;
   color: var(--text-secondary);
   margin: 0.25rem 0 0;
+}
+
+/* Color palette layout — shared by Design & Playground */
+.color-palette-layout {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.color-categories-grid {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.color-category-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  padding: 0.35rem 0.5rem;
+}
+
+.color-category-label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+.color-category-swatches {
+  display: flex;
+  gap: 0.35rem;
+}
+
+/* Color wheel */
+.color-wheel {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.color-wheel svg {
+  flex-shrink: 0;
+}
+
+/* Compact swatches inside category chips */
+.color-category-chip .color-swatch-circle {
+  width: 30px;
+  height: 30px;
+}
+
+.color-category-chip .color-swatch-name {
+  font-size: 0.55rem;
+  max-width: 44px;
 }
 
 /* Toast notification */

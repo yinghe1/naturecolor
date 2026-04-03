@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { v4 as uuidv4 } from 'uuid';
-import { generateDesignSystem } from '../generateDesignSystem.js';
+import { generateDesignSystem, categorizeColor } from '../generateDesignSystem.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dataFile = path.join(__dirname, '..', 'data', 'colors.json');
@@ -21,7 +21,18 @@ function writeColors(colors) {
 const router = Router();
 
 router.get('/', (req, res) => {
-  res.json(readColors());
+  const colors = readColors();
+  let needsWrite = false;
+  for (const color of colors) {
+    if (!color.category) {
+      color.category = categorizeColor(color.hex);
+      needsWrite = true;
+    }
+  }
+  if (needsWrite) {
+    writeColors(colors);
+  }
+  res.json(colors);
 });
 
 router.post('/', (req, res) => {
@@ -30,7 +41,7 @@ router.post('/', (req, res) => {
     return res.status(400).json({ error: 'name and hex are required' });
   }
   const colors = readColors();
-  const color = { id: uuidv4(), name, hex, rgb: rgb || null, sourceImage: sourceImage || null, createdAt: new Date().toISOString() };
+  const color = { id: uuidv4(), name, hex, rgb: rgb || null, sourceImage: sourceImage || null, category: categorizeColor(hex), createdAt: new Date().toISOString() };
   colors.push(color);
   writeColors(colors);
   res.status(201).json(color);

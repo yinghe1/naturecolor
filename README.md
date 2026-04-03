@@ -27,7 +27,7 @@ A color design app that extracts colors from nature images. Pick colors directly
 - **Backend**: Node.js + Express (port 3002)
 - **Frontend**: React + Vite (port 5173)
 - **Storage**: JSON file persistence
-- **LLM**: OpenAI API (GPT-4o)
+- **LLM**: OpenAI API (GPT-4o) or Claude CLI
 - **Logging**: Pino
 
 ## Getting Started
@@ -36,9 +36,14 @@ A color design app that extracts colors from nature images. Pick colors directly
 # Install dependencies
 npm run install:all
 
-mv .env.sample .env 
-# Add your OpenAI API key
-# Edit .env and set OPENAI_API_KEY=sk-...
+mv .env.sample .env
+
+# Option A: Use Claude CLI (no API key needed)
+# Set USE_CLAUDE=true in .env
+# Requires `claude` CLI installed and logged in
+
+# Option B: Use OpenAI API
+# Set USE_CLAUDE=false and OPENAI_API_KEY=sk-... in .env
 
 # Start both server and client
 npm run dev

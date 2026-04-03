@@ -41,6 +41,26 @@ function hexToHsl(hex) {
   };
 }
 
+export function categorizeColor(hex) {
+  const { h, s, l } = hexToHsl(hex);
+
+  if (s < 10) {
+    if (l < 15) return 'Black';
+    if (l > 85) return 'White';
+    return 'Gray';
+  }
+
+  if (h <= 15 || h > 345) return 'Red';
+  if (h <= 45) return 'Orange';
+  if (h <= 70) return 'Yellow';
+  if (h <= 79) return 'Yellow-Green';
+  if (h <= 169) return 'Green';
+  if (h <= 200) return 'Cyan';
+  if (h <= 260) return 'Blue';
+  if (h <= 290) return 'Purple';
+  return 'Pink';
+}
+
 export function generateDesignSystem(colors) {
   if (!fs.existsSync(distDir)) {
     fs.mkdirSync(distDir, { recursive: true });

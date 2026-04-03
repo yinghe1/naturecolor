@@ -101,6 +101,12 @@
       "hex": "#a0b2cc",
       "rgb": "rgb(160, 178, 204)",
       "hsl": "hsl(215, 30%, 71%)"
+    },
+    {
+      "name": "daffodilyellow",
+      "hex": "#fbef53",
+      "rgb": "rgb(251, 239, 83)",
+      "hsl": "hsl(56, 95%, 65%)"
     }
   ]
 }

@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import ColorSwatch from '../components/ColorSwatch'
+import ColorWheel from '../components/ColorWheel'
 
 export default function Playground() {
   const [colors, setColors] = useState([])
@@ -11,6 +12,7 @@ export default function Playground() {
   const [savedArtifact, setSavedArtifact] = useState(null)
   const [artifactName, setArtifactName] = useState('')
   const [toast, setToast] = useState(null)
+  const [highlightedColorId, setHighlightedColorId] = useState(null)
 
   useEffect(() => {
     fetch('/api/colors')
@@ -18,6 +20,16 @@ export default function Playground() {
       .then(setColors)
       .catch(console.error)
   }, [])
+
+  const colorsByCategory = useMemo(() => {
+    const groups = {}
+    for (const c of colors) {
+      const cat = c.category || 'Uncategorized'
+      if (!groups[cat]) groups[cat] = []
+      groups[cat].push(c)
+    }
+    return groups
+  }, [colors])
 
   const handleGenerate = async () => {
     if (!instruction.trim()) return
@@ -91,7 +103,19 @@ export default function Playground() {
         {colors.length === 0 ? (
           <span className="palette-empty">No colors saved yet. Go to Design to pick some colors.</span>
         ) : (
-          colors.map(c => <ColorSwatch key={c.id} color={c} />)
+          <div className="color-palette-layout">
+            <ColorWheel colors={colors} highlightedColorId={highlightedColorId} onHoverColor={setHighlightedColorId} />
+            <div className="color-categories-grid">
+              {Object.entries(colorsByCategory).map(([category, catColors]) => (
+                <div key={category} className="color-category-chip">
+                  <span className="color-category-label">{category}</span>
+                  <div className="color-category-swatches">
+                    {catColors.map(c => <ColorSwatch key={c.id} color={c} highlighted={highlightedColorId === c.id} onHoverColor={setHighlightedColorId} />)}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         )}
       </div>
 

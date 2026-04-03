@@ -1,6 +1,10 @@
-export default function ColorSwatch({ color, onDelete }) {
+export default function ColorSwatch({ color, onDelete, highlighted, onHoverColor }) {
   return (
-    <div className="color-swatch">
+    <div
+      className={`color-swatch${highlighted ? ' color-swatch--highlighted' : ''}`}
+      onMouseEnter={() => onHoverColor?.(color.id)}
+      onMouseLeave={() => onHoverColor?.(null)}
+    >
       <div
         className="color-swatch-circle"
         style={{ backgroundColor: color.hex }}

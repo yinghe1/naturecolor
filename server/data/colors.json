@@ -5,7 +5,8 @@
     "hex": "#6b99e0",
     "rgb": "rgb(107, 153, 224)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T00:43:45.382Z"
+    "createdAt": "2026-04-02T00:43:45.382Z",
+    "category": "Blue"
   },
   {
     "id": "b05d9e45-9e90-4b55-9c93-cfa7aa4b638e",
@@ -13,7 +14,8 @@
     "hex": "#9a9fd1",
     "rgb": "rgb(154, 159, 209)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T00:43:58.791Z"
+    "createdAt": "2026-04-02T00:43:58.791Z",
+    "category": "Blue"
   },
   {
     "id": "8930294d-0117-4184-ae17-7e33448a6161",
@@ -21,7 +23,8 @@
     "hex": "#ffa7af",
     "rgb": "rgb(255, 167, 175)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T00:44:19.567Z"
+    "createdAt": "2026-04-02T00:44:19.567Z",
+    "category": "Red"
   },
   {
     "id": "3f8da9d5-162c-447b-9d5c-656cbb39ed86",
@@ -29,7 +32,8 @@
     "hex": "#d25700",
     "rgb": "rgb(210, 87, 0)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T00:56:28.176Z"
+    "createdAt": "2026-04-02T00:56:28.176Z",
+    "category": "Orange"
   },
   {
     "id": "6a858ae8-7a96-4031-9294-cb27e1280367",
@@ -37,7 +41,8 @@
     "hex": "#ccc8b5",
     "rgb": "rgb(204, 200, 181)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T00:56:53.437Z"
+    "createdAt": "2026-04-02T00:56:53.437Z",
+    "category": "Yellow"
   },
   {
     "id": "6c4b1ab4-2277-4153-bde5-31e95b5094bc",
@@ -45,7 +50,8 @@
     "hex": "#ec4a53",
     "rgb": "rgb(236, 74, 83)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T00:57:29.149Z"
+    "createdAt": "2026-04-02T00:57:29.149Z",
+    "category": "Red"
   },
   {
     "id": "b9a1ccd5-87e1-4f18-b3db-8b4e5040fc71",
@@ -53,7 +59,8 @@
     "hex": "#ee7d6a",
     "rgb": "rgb(238, 125, 106)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T00:57:46.766Z"
+    "createdAt": "2026-04-02T00:57:46.766Z",
+    "category": "Red"
   },
   {
     "id": "428716fc-c363-4059-ae97-4e0095048305",
@@ -61,7 +68,8 @@
     "hex": "#620013",
     "rgb": "rgb(98, 0, 19)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T00:58:01.132Z"
+    "createdAt": "2026-04-02T00:58:01.132Z",
+    "category": "Red"
   },
   {
     "id": "b6773f64-949b-406d-8fe5-533131e4de25",
@@ -69,7 +77,8 @@
     "hex": "#f85700",
     "rgb": "rgb(248, 87, 0)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T00:58:12.907Z"
+    "createdAt": "2026-04-02T00:58:12.907Z",
+    "category": "Orange"
   },
   {
     "id": "20b25d1f-0d22-48c9-be00-f3abd7107867",
@@ -77,7 +86,8 @@
     "hex": "#4f96da",
     "rgb": "rgb(79, 150, 218)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T00:59:03.965Z"
+    "createdAt": "2026-04-02T00:59:03.965Z",
+    "category": "Blue"
   },
   {
     "id": "651d2f21-9cc3-4408-8737-3daea9e2eb83",
@@ -85,7 +95,8 @@
     "hex": "#4598aa",
     "rgb": "rgb(69, 152, 170)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T01:00:54.493Z"
+    "createdAt": "2026-04-02T01:00:54.493Z",
+    "category": "Cyan"
   },
   {
     "id": "9e1e11c6-898f-41f6-8a13-797ed1bfba10",
@@ -93,7 +104,8 @@
     "hex": "#06b6cc",
     "rgb": "rgb(6, 182, 204)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T01:01:50.022Z"
+    "createdAt": "2026-04-02T01:01:50.022Z",
+    "category": "Cyan"
   },
   {
     "id": "38c687e5-2cf8-4c9f-a864-b0d1e5d847d5",
@@ -101,7 +113,8 @@
     "hex": "#323232",
     "rgb": "rgb(50, 50, 50)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T01:03:02.426Z"
+    "createdAt": "2026-04-02T01:03:02.426Z",
+    "category": "Gray"
   },
   {
     "id": "c076ef8a-8fe0-4def-b0f4-a4f58f70bcc7",
@@ -109,7 +122,8 @@
     "hex": "#0136ed",
     "rgb": "rgb(1, 54, 237)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T01:04:33.404Z"
+    "createdAt": "2026-04-02T01:04:33.404Z",
+    "category": "Blue"
   },
   {
     "id": "9b1ed193-ac4d-4abd-aeb1-955d8b21b179",
@@ -117,7 +131,8 @@
     "hex": "#397b11",
     "rgb": "rgb(57, 123, 17)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T01:04:58.317Z"
+    "createdAt": "2026-04-02T01:04:58.317Z",
+    "category": "Green"
   },
   {
     "id": "cdd35166-ac9a-4159-9308-652de04373d7",
@@ -125,7 +140,8 @@
     "hex": "#ffffff",
     "rgb": "rgb(255, 255, 255)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T01:24:18.822Z"
+    "createdAt": "2026-04-02T01:24:18.822Z",
+    "category": "White"
   },
   {
     "id": "7a36b7ed-4f84-4ca8-bf1f-532fd8659abf",
@@ -133,6 +149,16 @@
     "hex": "#a0b2cc",
     "rgb": "rgb(160, 178, 204)",
     "sourceImage": null,
-    "createdAt": "2026-04-02T01:24:41.256Z"
+    "createdAt": "2026-04-02T01:24:41.256Z",
+    "category": "Blue"
+  },
+  {
+    "id": "2c27bc92-4805-49b0-aa06-93fd2797d22a",
+    "name": "daffodilyellow",
+    "hex": "#fbef53",
+    "rgb": "rgb(251, 239, 83)",
+    "sourceImage": null,
+    "createdAt": "2026-04-03T21:39:58.731Z",
+    "category": "Yellow"
   }
 ]
